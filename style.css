@@ -1201,4 +1201,7 @@ p {
 	.app-block {
 		display: none;
 	}
+	.blog-grow-1, .blog-grow-2, .blog-grow-3 {
+		display: none;
+	}
 }
