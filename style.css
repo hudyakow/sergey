@@ -1177,16 +1177,16 @@ p {
 	.me {
 		margin-top: -50px;
 	}
-	/*.Sphere {
+	.Sphere {
 		display: none;
-	}*/
+	}
 	.progress-container {
 		height: 10px;
 	}
-	/*.progress-bar {
+	.progress-bar {
 		height: 10px;
 	}
-	.app-block {
+	/*.app-block {
 		width: 300px;
 	}
 	.design-block {
