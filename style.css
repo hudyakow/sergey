@@ -1197,16 +1197,13 @@ p {
 	}
 	.blog1, .blog2, .blog3 {
 		width: 300px;
-	}*/
-	.app-block {
-		display: none;
 	}
 	.blog-grow-1, .blog-grow-2, .blog-grow-3 {
 		display: none;
 	}
 	.blog1, .blog2, .blog3 {
 		display: none;
-	}
+	}*/
 	.back-6 {
 		display: none;
 	}
