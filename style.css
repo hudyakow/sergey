@@ -1186,7 +1186,7 @@ p {
 	.progress-bar {
 		height: 10px;
 	}
-	/*.app-block {
+	.app-block {
 		width: 300px;
 	}
 	.design-block {
@@ -1195,10 +1195,10 @@ p {
 	.portfolio-block {
 		width: 300px;
 	}
-	.blog1, .blog2, .blog3 {
+	/*.blog1, .blog2, .blog3 {
 		width: 300px;
-	}
-	.blog-grow-1, .blog-grow-2, .blog-grow-3 {
+	}*/
+	/*.blog-grow-1, .blog-grow-2, .blog-grow-3 {
 		display: none;
 	}
 	.blog1, .blog2, .blog3 {
