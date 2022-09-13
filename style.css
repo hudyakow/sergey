@@ -1177,13 +1177,13 @@ p {
 	.me {
 		margin-top: -50px;
 	}
-	.Sphere {
+	/*.Sphere {
 		display: none;
-	}
+	}*/
 	.progress-container {
 		height: 10px;
 	}
-	.progress-bar {
+	/*.progress-bar {
 		height: 10px;
 	}
 	.app-block {
@@ -1197,5 +1197,5 @@ p {
 	}
 	.blog1, .blog2, .blog3 {
 		width: 300px;
-	}
+	}*/
 }
