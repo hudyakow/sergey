@@ -1207,4 +1207,7 @@ p {
 	.blog1, .blog2, .blog3 {
 		display: none;
 	}
+	.back-6 {
+		display: none;
+	}
 }
