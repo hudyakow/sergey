@@ -1204,4 +1204,7 @@ p {
 	.blog-grow-1, .blog-grow-2, .blog-grow-3 {
 		display: none;
 	}
+	.blog1, .blog2, .blog3 {
+		display: none;
+	}
 }
