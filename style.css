@@ -1216,4 +1216,7 @@ p {
 	.portfolio-block-1 {
 		display: inline-block;
 	}
+	.portfolio-block {
+		display: none;
+	}
 }
