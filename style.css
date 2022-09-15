@@ -1198,6 +1198,11 @@ p {
 		width: 200px;
 		margin: 200px 10px 0 0;
 	}
+	.portfolio-block {
+	        display: flex;
+                justify-content: center;
+	        position: relative;
+        }
 	/*.blog-grow-1, .blog-grow-2, .blog-grow-3 {
 		display: none;
 	}
