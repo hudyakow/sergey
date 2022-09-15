@@ -1219,4 +1219,12 @@ p {
 	.flip-card-front {
 		text-align: center;
 	}*/
+	.blog-grow-1, .blog-grow-2, .blog-grow-3 {
+		margin: 0 0 0 0;
+	}
+	.blog1, .blog2, .blog3 {
+		height: 250px;
+		width: 250px;
+		margin: 0 30px 20px 30px;
+	}
 }
