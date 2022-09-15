@@ -913,6 +913,9 @@ input {
     justify-content: center;
 	position: relative;
 }
+.portfolio-block-1 {
+	display: none;
+}
 .web-block {
 	width: 350px;
 	height: 600px;
@@ -1209,5 +1212,8 @@ p {
 	}*/
 	.back-6 {
 		display: none;
+	}
+	.portfolio-block-1 {
+		display: inline-block;
 	}
 }
