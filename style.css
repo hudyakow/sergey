@@ -1188,9 +1188,15 @@ p {
 	}
 	.app-block {
 		width: 300px;
+		margin: 200px 0 0 0;
 	}
 	.design-block {
 		width: 300px;
+		margin: 200px 10px 0 0;
+	}
+	.web-block {
+		width: 300px;
+		margin: 200px 10px 0 0;
 	}
 	.portfolio-block {
 		width: 300px;
