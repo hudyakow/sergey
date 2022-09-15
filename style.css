@@ -1216,4 +1216,7 @@ p {
 	.portfolio-block {
 		display: none;
 	}
+	.flip-card-front {
+		text-align: center;
+	}
 }
