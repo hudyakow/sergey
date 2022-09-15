@@ -1190,16 +1190,16 @@ p {
 		height: 10px;
 	}
 	.app-block {
-		width: 700px;
-		margin: 200px 20% 0 0;
+		width: 370px;
+		margin: 200px 50px 0 0;
 	}
 	.design-block {
-		width: 700px;
-		margin: 200px 20% 0 0;
+		width: 370px;
+		margin: 200px 50px 0 0;
 	}
 	.web-block {
-		width: 700px;
-		margin: 200px 20% 0 0;	
+		width: 370px;
+		margin: 200px 50px 0 0;	
 	}
 	/*.blog-grow-1, .blog-grow-2, .blog-grow-3 {
 		display: none;
