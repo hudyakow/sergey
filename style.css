@@ -1240,9 +1240,9 @@ label {
 	        display: block;
         }
         .logo, .menu-icon {
-	        visibility: block;
+	        visibility: visible;
         }
         label {
-	        visibility: block;
+	        visibility: visible;
         }
 }
