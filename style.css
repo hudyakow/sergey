@@ -1357,7 +1357,7 @@ p {
 	}
 	.Sphere {
 	        margin: -600px 0 0 1100px;
-		display:;
+		display:calc();
         }
 	.progress-container {
 		height: 10px;
