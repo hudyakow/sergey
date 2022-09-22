@@ -1547,9 +1547,6 @@ h2 {
 	.back-4 {
 		height: 40vh;
 	}
-	.back-2 {
-		height: 55vh;
-	}
 	.menu-button {
 		font-size: 100px;
 	}
@@ -1630,6 +1627,9 @@ h2 {
     }
 	.menu {
 		visibility: hidden;
+	}
+	.back-2 {
+		height: 200vh;
 	}
 	
 	
