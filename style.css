@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bree+Serif&family=Bungee+Shade&family=Cormorant+Garamond:wght@300&family=Josefin+Sans:wght@100;700&family=Kaushan+Script&family=Montserrat+Alternates:wght@100&family=Montserrat:wght@300;800;900&family=Oswald:wght@700&family=Prata&family=Roboto:wght@900&family=Rubik+Moonrocks&family=Russo+One&family=Ubuntu:wght@700&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bree+Serif&family=Bungee+Hairline&family=Bungee+Shade&family=Bungee+Spice&family=Caveat&family=Comfortaa:wght@300&family=Cormorant+Garamond:wght@300&family=Josefin+Sans:wght@100;700&family=Kaushan+Script&family=Montserrat+Alternates:wght@100&family=Montserrat:wght@300;800;900&family=Oswald:wght@700&family=Prata&family=Roboto:wght@900&family=Rubik+Moonrocks&family=Russo+One&family=Ubuntu:wght@700&family=Yeseva+One&display=swap');
 * {
 	cursor: url("image/cursor2.png");
 }
@@ -420,14 +420,14 @@ li {
 }
 .blog-grow-1,.blog-grow-2, .blog-grow-3 {
 	display: inline-block;
-	margin: 0 0 0 100px;
+	margin: 0 0 0 250px;
 }
-.blog-grow-1 {
+/*.blog-grow-1 {
 	margin: 100px 0 0 100px;
-}
+}*/
 .blog1 {
-	width: 500px;
-	height: 400px;
+	width: 400px;
+	height: 350px;
 	/*background-color: #272727;
 	border: 1px solid black;*/
 	margin: 100px 30px 20px 30px;
@@ -437,9 +437,42 @@ li {
 	background: url("image/port1.jpg") no-repeat center center;
 	background-size: cover;
 }
-.blog2 {
+.h1-text {
+	font-size: 30px;
+	margin-top: 100px;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	display: inline-block;
+}
+.h2-text {
+	font-size: 25px;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+}
+/*.circle-blog {
+	width: 250px;
+	height: 250px;
+	background-color: gray;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+.blog1 .blog1-psevdo:hover, .blog2 .blog1-psevdo:hover, .blog3 .blog1-psevdo:hover {
+	background: rgba(120, 76, 251, .5);
+	background-size: 120%;
 	width: 500px;
 	height: 400px;
+	display: inline-block;
+	border-radius: 5%;
+	transition: 0.5s;
+}*/
+.blog2 {
+	width: 400px;
+	height: 350px;
 	/*background-color: #272727;
 	border: 1px solid black;*/
 	margin: 20px 30px;
@@ -450,8 +483,8 @@ li {
 	background-size: cover;
 }
 .blog3 {
-	width: 500px;
-	height: 400px;
+	width: 400px;
+	height: 350px;
 	/*background-color: #272727;
 	border: 1px solid black;*/
 	margin: 20px 30px;
@@ -460,7 +493,53 @@ li {
 	border-radius: 5%;
 	background: url("image/port1.jpg") no-repeat center center;
 	background-size: cover;
+	
 }
+.blog1:hover .blog1-main-text, .blog2:hover .blog1-main-text, .blog3:hover .blog1-main-text {
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+	justify-content: center;
+    opacity: 1;
+	transition: 0.9s;
+}
+/*.blog1:hover, .blog2:hover, .blog3:hover {
+	background: rgba(120, 76, 251, .7);
+	background-size: 110%;
+}*/
+.blog1-main-text {
+	color: #fff;
+	font-size: 10px;
+	text-align: center;
+	justify-content: center;
+	opacity: 0;
+	height: 100px;
+}
+.h1-blog {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	justify-content: center;
+	background-color: #efedfb;
+	opacity: 0.7;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	color: #000;
+	font-weight: bold;
+	font-size: 50px;
+	font-weight: 200;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*.blog1-main-text:hover {
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+	justify-content: center;
+	display: inline-block;
+	transition: 0.5s;
+}*/
 .blog1-text-1 {
 	color: #fff;
 	margin: 50px 0 0 30px;
@@ -1145,7 +1224,7 @@ p {
 .back-8 {
 	background: url("image/slide4.png") no-repeat center center;
 	background-size: cover;
-	height: 200vh;
+	height: 1 00vh;
 	width: 100%;
 }
 .nav {
@@ -1220,9 +1299,13 @@ label {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold ;
 }
-.first-menu-button:hover {
+/*.first-menu-button:hover {
 	transition: 0.7s;
 	color: #784cfb;
+}*/
+.menu:hover .first-menu-button:not(:hover) {
+	opacity: 0.5;
+	transition: 0.7s;
 }
 .skills {
 	font-size: 30px;
@@ -1278,6 +1361,11 @@ label {
 	/*margin: -900px 0 0 1000px;*/
 	/*display: none;*/
 }
+.Sphere1 {
+	margin: -100px 0 0 500px;
+	/*margin: -900px 0 0 1000px;*/
+	/*display: none;*/
+}
 p {
 	margin: 20px 0 0 150px;
 	font-family: 'Montserrat', sans-serif;
@@ -1326,7 +1414,136 @@ p {
 	margin: 0 0 0 150px;
 	border-radius: 50px 0 0 50px;
 }
-@media (max-width: 1100px) { 
+.back-9 {
+	background: url("image/slide5.png") no-repeat center center;
+	background-size: cover;
+	height: 25vh;
+	width: 100%;
+}
+.data-circle-1, .data-circle-2, .data-circle-3 {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	display: inline-block;
+	text-align: center;
+	justify-content: center;
+	margin-right: 100px;
+	margin-top: 15px;
+	opacity: 0.9;
+}
+.circle {
+	display: flex;
+    justify-content: center;
+	position: relative;
+}
+.circle-h1 {
+	text-align: center;
+	justify-content: center;
+	font-size: 30px;
+	font-family: 'Comfortaa', cursive;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 50px;
+}
+h2 {
+	color: #fff;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+	margin-top: -20px;
+}
+.back-10 {
+	background: url("image/test-4.png") no-repeat center center;
+	background-size: cover;
+	height: 200vh;
+	width: 100%;
+}
+.back-10-h1 {
+	font-size: 30px;
+	color: #303030;
+	text-align: center;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.back-10-h2 {
+	font-size: 30px;
+	color: #784cfb;
+	text-align: center;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: -20px;
+}
+.blog-block {
+	text-align: center;
+	justify-content: center;
+}
+.first-card, .second-card, .third-card {
+	margin-right: 50px;
+	width: 400px;
+	height: 450px;
+	background-color: #efedfb;
+	/*box-shadow: 0 0 10px rgba(0,0,0,0.9);*/
+	display: inline-block;
+}
+.first-card-image, .second-card-image, .third-card-image {
+	margin: 0 0 20px 0;
+	/*width: calc(100% - 10px);*/
+	width: 400px;
+	height: 250px;
+
+}
+.first-card-image {
+	background: url("image/port1.jpg") no-repeat center center;
+	background-size: cover;
+}
+.second-card-image {
+	background: url("image/port2.png") no-repeat center center;
+	background-size: cover;
+}
+.third-card-image {
+	background: url("image/port5.jpg") no-repeat center center;
+	background-size: cover;
+}
+.first-card-block {
+	display: inline-block;
+	width: 400;
+	text-align: right;
+}
+.first-card-date {
+	font-size: 20px;
+	color: #784cfb;
+	font-family: 'Montserrat', sans-serif;
+	margin: 20px 0 0 20px;
+	text-align: left;
+}
+.first-card-name {
+	font-weight: bold;
+	font-size: 20px;
+	color: #303030;
+	font-family: 'Montserrat', sans-serif;
+	margin: 10px 0 0 20px;
+	text-align: left;
+}
+.first-card-text {
+	width: 400px;
+	text-align: left;
+	font-size: 20px;
+	color: #303030;
+	font-family: 'Montserrat', sans-serif;
+	margin: 10px 0 0 20px;
+	display: inline-block;
+}
+.first-card-button {
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #784cfb;
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+	text-decoration: none;
+}
+@media (max-width: 1500px) { 
 	.back-4 {
 		height: 40vh;
 	}
@@ -1356,9 +1573,8 @@ p {
 		margin-top: -50px;
 	}
 	.Sphere {
-	        margin: -600px 0 0 1100px;
-		display:calc();
-        }
+		display: none;
+	}
 	.progress-container {
 		height: 10px;
 	}
@@ -1402,9 +1618,6 @@ p {
 		height: 250px;
 		width: 250px;
 		margin: 0 30px 20px 30px;
-	}
-	.back-4 {
-		height: 200vh;
 	}
 	.nav {
 	    display: block;
