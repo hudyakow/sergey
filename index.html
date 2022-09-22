@@ -59,5 +59,20 @@
             height: 100%;
         }
     }
+    @media (max-width: 1500px) {
+        .scan .qrcore {
+            width: 600px;
+            height: 600px;
+        }
+        .scan .qrcode::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: url("image/qrcode2.png");
+        background-size: 600px;
+        overflow: hidden;
+    }
 </style>
 </html>
