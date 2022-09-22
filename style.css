@@ -1571,7 +1571,7 @@ h2 {
 	}
 	.Sphere {
 		vertical-align: middle;
-		margin: 100px 0 0 0;
+		margin: 100px 0 0 100px;
 	}
 	.progress-container {
 		height: 10px;
