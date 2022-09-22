@@ -1573,7 +1573,7 @@ h2 {
 		margin-top: -50px;
 	}
 	.Sphere {
-		display: '';
+		vertical-align: middle;
 	}
 	.progress-container {
 		height: 10px;
