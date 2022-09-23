@@ -361,6 +361,249 @@
 					<div class = "first-card-text">Как сделать меню. Как сделать меню. Как сделать меню. Как сделать меню. Как сделать меню.<a href = "#" class = "first-card-button">Читать</a></div>
 				</div>
 			</div>
+			<div class="BoxMassage">
+				<div class="SendmsgNow">Введите ваш текст...</div>
+			</div>
+			<div class="BoxSend">
+				<input type="text" id="msgUser" placeholder="Написать мне">
+				<div class="send"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+						<path
+							d="M7.75778 6.14799C6.84443 5.77187 6.0833 5.45843 5.49196 5.30702C4.91915 5.16036 4.18085 5.07761 3.63766 5.62862C3.09447 6.17962 3.18776 6.91666 3.34259 7.48732C3.50242 8.07644 3.8267 8.83302 4.21583 9.7409L4.86259 11.25H10C10.4142 11.25 10.75 11.5858 10.75 12C10.75 12.4142 10.4142 12.75 10 12.75H4.8626L4.21583 14.2591C3.8267 15.167 3.50242 15.9236 3.34259 16.5127C3.18776 17.0833 3.09447 17.8204 3.63766 18.3714C4.18085 18.9224 4.91915 18.8396 5.49196 18.693C6.0833 18.5416 6.84443 18.2281 7.75777 17.852L19.1997 13.1406C19.4053 13.0561 19.6279 12.9645 19.7941 12.867C19.944 12.779 20.3434 12.5192 20.3434 12C20.3434 11.4808 19.944 11.221 19.7941 11.133C19.6279 11.0355 19.4053 10.9439 19.1997 10.8594L7.75778 6.14799Z"
+							fill="black" />
+					</svg></div>
+			</div>
+	
+		</div>
+		<style>
+			input {
+		width: 100%;
+		padding: 7px 26px;
+		background: #ffffff;
+		font-size: 18px;
+		color: black;
+		border-radius: 14px;
+		border: none;
+		outline: none;
+	}
+	
+	.BoxChat {
+		background: #efeae2;
+		max-width: 100%;
+		margin: auto;
+		margin: 100px 50px 0 50px;
+	}
+	
+	.BoxMassage {
+		padding: 4%;
+		overflow-y: scroll;
+		height: 270px;
+	}
+	
+	.massage {
+		max-width: 43%;
+		padding: 1% 4%;
+		border-radius: 7.5px;
+		box-shadow: 0 1px 0.5px #0000001a;
+		margin: 17px 0;
+		font-family: sans-serif;
+		line-height: 24px;
+	}
+	
+	.msgBot {
+		background: #d9fdd3;
+		margin-left: auto;
+		padding: 2% 4%;
+	}
+	
+	.msgUser {
+		background: white;
+	}
+	
+	.send {
+		padding: 8px 30px;
+		cursor: pointer;
+		margin: auto 0;
+	}
+	
+	.BoxSend {
+		display: flex;
+		background: #f0f2f5;
+		padding: 14px;
+	}
+	
+	.BoxInfoUser {
+		display: flex;
+		background: #f0f2f5;
+		padding: 9px;
+	}
+	
+	.Menu {
+		width: 70px;
+		padding: 10px 13px;
+		margin: auto 0;
+		margin-left: auto;
+		border-radius: 12px;
+		cursor: pointer;
+		font-family: sans-serif;
+		text-align: center;
+	}
+	
+	.Menu:hover {
+		animation: bg 2s;
+		background-color: #e1e1e1;
+	}
+	
+	@keyframes bg {
+		35% {
+			background-color: #e1e1e144;
+		}
+		65% {
+			background-color: #e1e1e1a5;
+		}
+		100% {
+			background-color: #e1e1e1;
+		}
+	}
+	
+	@keyframes color {
+		0% {
+			background: #33CCCC;
+		}
+		20% {
+			background: #33CC36;
+		}
+		40% {
+			background: #B8CC33;
+		}
+		60% {
+			background: #FCCA00;
+		}
+		80% {
+			background: #33CC36;
+		}
+		100% {
+			background: #33CCCC;
+		}
+	}
+	
+	@keyframes shadow {
+		0% {
+			box-shadow: 0 0 4px #006a34b8;
+		}
+		20% {
+			box-shadow: 0 0 8px #006a34b8;
+		}
+		40% {
+			box-shadow: 0 0 12px #006a34b8;
+		}
+		60% {
+			box-shadow: 0 0 12px #006a34b8;
+		}
+		80% {
+			box-shadow: 0 0 8px #006a34b8;
+		}
+		100% {
+			box-shadow: 0 0 5px #006a34b8;
+		}
+	}
+	
+	.ImageProfileBot {
+		width: 50px;
+		height: 50px;
+		margin: auto 0;
+		padding: 0 0 0 7px;
+	}
+	
+	.NameBot {
+		padding: 0 14px;
+		font-size: 18px;
+		font-family: sans-serif;
+		margin: auto 0;
+	}
+	
+	.Loader {
+		background: #87888b;
+		width: 20px;
+		height: 20px;
+		margin: 0 6px;
+		border-radius: 59px;
+		animation: shadow 9s infinite linear, color 9s infinite linear;
+	}
+	
+	.BoxLoader {
+		margin: 12px auto;
+		display: flex;
+		width: 94px;
+		height: 20px;
+	}
+	
+	.SendmsgNow {
+		background: white;
+		padding: 17px;
+		border-radius: 23px;
+		text-align: center;
+		width: 60%;
+		margin: 100px auto;
+		font-family: sans-serif;
+	}
+		</style>
+		<script>
+			var BoxMassage = document.getElementsByClassName('BoxMassage');
+	
+	// СООБЩЕНИЯ ЮЗЕРА
+	
+	document.getElementsByClassName('send')[0].addEventListener('click', SendmsgUser);
+	
+	function SendmsgUser() {
+		document.getElementsByClassName('SendmsgNow')[0].style.display = "none";
+		let msg = document.getElementById('msgUser');
+		let Boxmsg = document.createElement('div');
+		Boxmsg.className = "msgUser massage";
+		let TextUser = document.createElement('p');
+		TextUser.innerHTML = msg.value;
+		Boxmsg.appendChild(TextUser);
+		BoxMassage[0].appendChild(Boxmsg);
+		SendmsgBot(msg.value);
+		msg.value = "";
+	}
+	
+	// СООБЩЕНИЯ БОТАВ
+	
+	// ЛИСТ СООБЩЕНИЙ
+	
+	var ListMassageHi = ['hello', 'Hello', 'Hello!', 'hello!', 'Hello?', 'hello?', 'hi', 'hi', 'hi!', 'hi!', 'hi?', 'hi?'];
+	var ListMassageHow = ['How are you', 'how are you', 'how', 'How', 'How are you!', 'how are you!', 'How are you?', 'how are you?'];
+	
+	
+	
+	function SendmsgBot(msgUser) {
+		let Boxmsg = document.createElement('div');
+		Boxmsg.className = "msgBot massage";
+		Boxmsg.innerHTML = '<div class="BoxLoader"><div class="Loader"></div><div class="Loader"></div><div class="Loader"></div></div>';
+		BoxMassage[0].appendChild(Boxmsg);
+		var msgBotNear = "";
+		for (let i of ListMassageHi) {
+			if (i == msgUser) msgBotNear = "hi baby...";
+		}
+		for (let i of ListMassageHow) {
+			if (i == msgUser) msgBotNear = "Yes, thank's...";
+		}
+	
+		if (msgBotNear == "") {
+			msgBotNear = "i don't understand!";
+		}
+		setTimeout(function() {
+			Boxmsg.innerHTML = msgBotNear;
+		}, 3000)
+	}
+	
+	
+	var menu_ = document.getElementsByClassName('Menu')[0].addEventListener('click', function() {
+		BoxMassage[0].innerHTML = '<div class="SendmsgNow">send now Massage (hello , how are you,...)</div>';
+		document.getElementsByClassName('SendmsgNow')[0].style.display = "block";
+	
+	});
+		</script>
 		</div>
 	</div>
 	<!---<div class = "back-4">
