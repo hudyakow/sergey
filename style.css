@@ -1745,9 +1745,6 @@ h2 {
 	.back-4 {
 		height: 40vh;
 	}
-	.back-2 {
-		height: 55vh;
-	}
 	.menu-button {
 		font-size: 100px;
 	}
@@ -1771,7 +1768,8 @@ h2 {
 		margin-top: -50px;
 	}
 	.Sphere {
-		display: none;
+		vertical-align: middle;
+		margin: 100px 0 0 100px;
 	}
 	.progress-container {
 		height: 10px;
@@ -1829,6 +1827,11 @@ h2 {
 	.menu {
 		visibility: hidden;
 	}
+	.back-2 {
+		height: 200vh;
+	}
+	
+	
 	
 }  
 /*.container {
