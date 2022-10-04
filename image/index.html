@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            $(document).ready(function() {
+          var delay = false;
+          var currentPage = 1;
+          var pageCount = $(".section").length;
+          var swipe = document.getElementsByTagName('.section');
+        
+          $(document).on('mousewheel DOMMouseScroll', function(event) {
+                event.preventDefault();
+                if (delay) return;
+                delay = true;
+                setTimeout(function() { delay = false }, 100)
+        
+                var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+                console.log(wd);
+        
+                if (wd < 0) {
+                    if (currentPage < pageCount) {
+                        currentPage++;
+                    }
+                } else {
+                    if (1 < currentPage) {
+                        currentPage--;
+                    }
+                }
+            
+                $('html,body').animate({
+                    scrollTop: $('#sec' + currentPage).offset().top
+                }, 700);
+        
+                $('#tag' + currentPage).addClass('active');
+                for (var i = 1; i <= pageCount; i++) {
+                    if (i != currentPage) {
+                        $('#tag' + i).removeClass('active');
+                    }
+                }
+            });
+        });  
+          </script>
+          <script
+          src="https://code.jquery.com/jquery-3.6.0.js"
+          integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+           crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <script src = "script.js"></script>
+        <ul>
+          <li id="tag1" class="active"></li>
+          <li id="tag2"></li>
+          <li id="tag3"></li>
+        </ul>
+          <div class="section" id="sec1"><p>Section 1</p></div>
+        <div class="section" id="sec2"><p>section 2</p></div>
+        <div class="section" id="sec3"><p>section 3</p></div>
+      </body>
+      <style>
+        html,body{
+      padding: 0;
+      margin: 0;
+    }
+    
+    ul{
+      top: calc(100% / 2 - 60px);
+      position: fixed;
+      height: auto;
+      right: 10px;
+    }
+    
+    li{
+      list-style-type: none;
+      width: 8px;
+      height: 8px;
+      background-color: brown;
+      border-radius: 4px;
+      margin: 20px 15px;
+      transition: 0.3s ease;
+    }
+    
+    .active{
+      background-color: yellow;
+    }
+    
+    .section{
+      width: 100%;
+      height: 100vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    
+    p{
+      font-size: 200%;
+      font-family: monospace;
+      font-weight: bold;
+    }
+    
+    #sec1{
+      background-color: rgb(255, 153, 153); 
+    }
+    
+    #sec2{
+      background-color: rgb(153, 204, 255); 
+    }
+    
+    #sec3{
+      background-color: rgb(255, 153, 102); 
+    }
+      </style>  
+</html>
