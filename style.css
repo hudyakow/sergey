@@ -414,6 +414,20 @@ a:checked + span {
     }
     .info-block {
         margin: 150px 100px 0 30%;
+        width: 500px;
+        height: 560px;
+    }
+    .text2 {
+        margin: 260px 0 0 80px;
+        z-index: 1;
+    }
+    .info-block h3 {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    .info-block h2 {
+        font-size: 20px;
+        margin-top: 10px;
     }
 }
 
