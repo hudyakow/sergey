@@ -429,6 +429,12 @@ a:checked + span {
         font-size: 20px;
         margin-top: 10px;
     }
+    .cv {
+        margin: 50px 0 0 80px;
+    }
+    .block-cv {
+        margin: -200px 0 0 80px;
+    }
 }
 
 .container {
