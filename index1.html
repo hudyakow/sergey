@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="onepagescroll.js"></script>
+        <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+        <title>sergey hudyakow</title>
+        <link href = "style.css" rel = "stylesheet">
+		<script src="https://kit.fontawesome.com/3219cc2f1b.js" crossorigin="anonymous"></script>
+		<script src = "script.js"></script>
+        <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
+        <script
+           src="https://code.jquery.com/jquery-3.6.0.js"
+           integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous">
+		</script>
+    </head>
+    <body>
+        <script type="text/javascript"> 
+            options = {
+            "cursorOuter": "circle-basic",
+            "hoverEffect": "circle-move",
+            "hoverItemMove": false,
+            "defaultCursor": false,
+            "outerWidth": 30,
+            "outerHeight": 30
+            };
+            magicMouse(options);
+        </script>
+        <div class="main">
+            <section class="section" id="sec1">
+                <div class = "logo">ЛОГО</div>
+                <div class = "text">
+                    Верю в <br>увлеченных людей
+                </div>
+                <a href = "#" class = "button-main">
+                    Написать<i class="fa-solid fa-arrow-right" style = "margin-left: 5px;"></i>
+                </a>
+                <div class = "block">
+                    <div class = "block-text1">
+                        <h1>Cifras1</h1>
+                        <h2>Uno dos trec cuatro cinco seis siete<br> ocho nueve diez</h2>
+                    </div>
+                    <div class = "block-text2">
+                        <h1>Cifras2</h1>
+                        <h2>Uno dos trec cuatro cinco seis siete<br> ocho nueve diez</h2>
+                    </div>
+                    
+                </div>
+                <div class = "photo"></div>
+            </section>
+              <!---<section class="section1" id="sec2">
+                <div class = "logo1">ЛОГО</div>
+                <div class = "btn">
+                    <a class = "hire-us" href = "#">Написать</a>
+                </div>
+                <div class = "work">Выберите задачу</div>
+                <div class = "circle">
+                    <div class = "circle-work2">
+                        <h3>ПОБЕДА</h3>
+                    </div>
+                    <div class = "circle-work">
+                        <h1>МЭТЬЮ & СМИТ</h1>
+                        <h2>Мы рассказываем вам вам<br>вам про интересную вам вам </h2>
+                    </div>
+                    <div class = "circle-work1">
+                        <h3>АЛЕКС</h3>
+                    </div>
+                </div>
+              </section>--->
+              <section class="section1" id="sec2">
+                <div class = "logo1">ЛОГО</div>
+                <div class = "btn">
+                    <a class = "hire-us" href = "#">Написать</a>
+                </div>
+                <div class = "work">Выберите задачу</div>
+                <div class = "circle">
+                    <div class="container">
+                        <button id="left-btn"><i class="arrow"></i></button>
+                        <img id="carousel" src="" alt="">
+                        <button id="right-btn"><i class="arrow"></i></button>
+                    </div>
+                </div>
+              </section>
+            <script>
+                const img = document.getElementById('carousel');
+const rightBtn = document.getElementById('right-btn');
+const leftBtn = document.getElementById('left-btn');
+
+// Images are from unsplash
+let pictures = ['image/work1.jpg', 'image/work4.jpg', 'image/work5.jpg'];
+
+img.src = pictures[0];
+let position = 0;
+
+const moveRight = () => {
+    if (position >= pictures.length - 1) {
+        position = 0
+        img.src = pictures[position];
+        return;
+    }
+    img.src = pictures[position + 1];
+    position++;
+}
+
+const moveLeft = () => {
+    if (position < 1) {
+        position = pictures.length - 1;
+        img.src = pictures[position];
+        return;
+    }
+    img.src = pictures[position - 1];
+    position--;
+}
+
+rightBtn.addEventListener("click", moveRight);
+leftBtn.addEventListener("click", moveLeft);
+            </script>
+              <section class="section2" id="sec3">
+                <div class = "logo1">ЛОГО</div>
+                <div class = "btn">
+                    <a class = "hire-us" href = "#">Написать</a>
+                </div>>
+                <div class = "text2">
+                    Я<br>Верю в<br>Увлеченных<br>Людей<span></span>
+                </div>
+                <a href = "#" class = "cv">РЕЗЮМЕ<i class="fa-solid fa-arrow-right" style = "margin-left: 15px; font-size: 20px"></i></a>
+                <div class = "cv-image"></div>
+                <div class = "block-cv">
+                    <div class = "part1">
+                        <h3>победители</h3>
+                    </div>
+                    <div class = "part2">
+                        <h3>программирование</h3>
+                    </div>
+                    <div class = "part3">
+                        <h3>математика</h3>
+                    </div>
+                </div>
+              </section>
+              <section class="section3" id="sec4">
+                <div class = "logo1">ЛОГО</div>
+                <div class = "btn">
+                    <a class = "hire-us" href = "#">Написать</a>
+                </div>
+                <div class = "info-block">
+                    <h3>Строитель, Россия</h3><br>
+                    <h2>sergey-hudyakow@mail.ru</h2><br>
+                    <h2 class = "phone">+7 980 528 1455</h2><br>
+                    <div class = 'block-button'>
+                        <a href = "#" class = "behance">Беханс</a><br>
+                        <a href = "#" class = "drible"> Дрибле</a><br>
+                        <a href = "#" class = "contact">Портфолио</a>
+                    </div>
+                </div>
+              </section>
+              <section class="section4" id="sec5">
+                <div class = "logo1">ЛОГО</div>
+                <div class = "btn">
+                    <a class = "hire-us" href = "#">Написать</a>
+                </div>
+                <h1>Вы хотите, чтобы я сделал...</h1>
+                <div class = "button-pyramide">
+                    <a type="checkbox" name="a1" class = "app" href = "#"><span>App Design</span></a>
+                    <a type="checkbox" name="a2" class = "graphic" href = "#">Graphic Design</a>
+                    <a type="checkbox" name="a3" class = "site" href = "#">Motion Design</a><br>
+                    <a type="checkbox" name="a4" class = "ux" href = "#">UX Design</a>
+                    <a type="checkbox" name="a5" class = "web" href = "#">Marketing</a><br>
+                    <a type="checkbox" name="a6" class = "design" href = "#">Webdesign</a>
+                </div>
+              </section>
+        </div>
+    
+        <script>
+            onePageScroll(".main", {
+sectionContainer: "section",
+easing: "ease",
+animationTime: 1000,
+pagination: true,
+updateURL: false,
+keyboard: true,
+beforeMove: null,
+afterMove: null,
+loop: false,
+responsiveFallback: false
+});
+        </script>
+    </body>
+</html>
